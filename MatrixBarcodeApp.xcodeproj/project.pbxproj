@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E3795B6E29071EB500A18BF4 /* QRCode in Frameworks */ = {isa = PBXBuildFile; productRef = E3795B6D29071EB500A18BF4 /* QRCode */; };
+		E3795B702907209C00A18BF4 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3795B6F2907209C00A18BF4 /* UIColor.swift */; };
+		E3795B722907213A00A18BF4 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3795B712907213A00A18BF4 /* QRCode.swift */; };
 		E3E989FC2906FDA400F92C3B /* MatrixBarcodeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E989FB2906FDA400F92C3B /* MatrixBarcodeAppApp.swift */; };
 		E3E989FE2906FDA400F92C3B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E989FD2906FDA400F92C3B /* ContentView.swift */; };
 		E3E98A002906FDA500F92C3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3E989FF2906FDA500F92C3B /* Assets.xcassets */; };
@@ -14,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E3795B6F2907209C00A18BF4 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		E3795B712907213A00A18BF4 /* QRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCode.swift; sourceTree = "<group>"; };
 		E3E989F82906FDA400F92C3B /* MatrixBarcodeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatrixBarcodeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3E989FB2906FDA400F92C3B /* MatrixBarcodeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixBarcodeAppApp.swift; sourceTree = "<group>"; };
 		E3E989FD2906FDA400F92C3B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,12 +31,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3795B6E29071EB500A18BF4 /* QRCode in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E3795B732907216600A18BF4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E3795B712907213A00A18BF4 /* QRCode.swift */,
+				E3795B6F2907209C00A18BF4 /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E3795B74290723A600A18BF4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E3E989FF2906FDA500F92C3B /* Assets.xcassets */,
+				E3E98A012906FDA500F92C3B /* Preview Content */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
 		E3E989EF2906FDA400F92C3B = {
 			isa = PBXGroup;
 			children = (
@@ -53,8 +77,8 @@
 			children = (
 				E3E989FB2906FDA400F92C3B /* MatrixBarcodeAppApp.swift */,
 				E3E989FD2906FDA400F92C3B /* ContentView.swift */,
-				E3E989FF2906FDA500F92C3B /* Assets.xcassets */,
-				E3E98A012906FDA500F92C3B /* Preview Content */,
+				E3795B732907216600A18BF4 /* Extensions */,
+				E3795B74290723A600A18BF4 /* Support Files */,
 			);
 			path = MatrixBarcodeApp;
 			sourceTree = "<group>";
@@ -83,6 +107,9 @@
 			dependencies = (
 			);
 			name = MatrixBarcodeApp;
+			packageProductDependencies = (
+				E3795B6D29071EB500A18BF4 /* QRCode */,
+			);
 			productName = MatrixBarcodeApp;
 			productReference = E3E989F82906FDA400F92C3B /* MatrixBarcodeApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +138,9 @@
 				Base,
 			);
 			mainGroup = E3E989EF2906FDA400F92C3B;
+			packageReferences = (
+				E3795B6C29071EB500A18BF4 /* XCRemoteSwiftPackageReference "QRCode" */,
+			);
 			productRefGroup = E3E989F92906FDA400F92C3B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +168,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3E989FE2906FDA400F92C3B /* ContentView.swift in Sources */,
+				E3795B722907213A00A18BF4 /* QRCode.swift in Sources */,
+				E3795B702907209C00A18BF4 /* UIColor.swift in Sources */,
 				E3E989FC2906FDA400F92C3B /* MatrixBarcodeAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +298,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MatrixBarcodeApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MatrixBarcodeApp/Support Files/Preview Content\"";
 				DEVELOPMENT_TEAM = YUN383XGPH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -295,7 +327,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MatrixBarcodeApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MatrixBarcodeApp/Support Files/Preview Content\"";
 				DEVELOPMENT_TEAM = YUN383XGPH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -339,6 +371,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E3795B6C29071EB500A18BF4 /* XCRemoteSwiftPackageReference "QRCode" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmrschmidt/QRCode";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E3795B6D29071EB500A18BF4 /* QRCode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E3795B6C29071EB500A18BF4 /* XCRemoteSwiftPackageReference "QRCode" */;
+			productName = QRCode;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E3E989F02906FDA400F92C3B /* Project object */;
 }
